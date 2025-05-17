@@ -1,0 +1,12 @@
+
+class Employee:
+  language = "Python"
+  Salary = 12000
+  
+  def getInfo(self):
+    print(f"The language is {self.language}. The salary is {self.Salary}")
+    
+harry = Employee()
+harry.language = "Java"
+harry.getInfo()
+print(harry.language , harry.Salary)
