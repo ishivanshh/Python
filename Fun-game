@@ -1,0 +1,28 @@
+name = input("Enter your name: ")
+print("Hello , " + name +  " Welcome to my game.")
+
+should_we_play = input("Do you want to play? ").lower()
+weapon = input("Gun or knife").lower()
+
+if should_we_play == "yes" or should_we_play== "y":
+  print("We are gonna play")
+  direction = input("Do you want to go left or right ? (left/right) ").lower()
+  if direction == "left":
+    print("okay , You went left and fell of a cliff , game is over, try again.")
+  elif direction == "right": 
+    choice =input("okay, you now see bridge, do you want to swim under it or cross it?(swim/cross)") 
+    if choice == "swim" and weapon == "knife":
+      print("You are eaten by an alligator, you die, END")
+    elif choice == "swim" and weapon == "gun":
+      print("Great, You killed.")
+      survive = input("You are opting boat or aeroplane").lower()
+      if survive == "boat":
+        print("Oops, Boat damages, You died ,END")
+      else:
+        print("You did it.")
+        print("You won")   
+  else:
+    print("You have not entered valid option, BYE") 
+    
+    print("Thankyou For playing adventure game")
+    
